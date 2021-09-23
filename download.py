@@ -38,12 +38,10 @@ def download_sample(sample: dict) -> dict:
         decompressed_file = gzip.GzipFile(fileobj=compressed_file)
         data = decompressed_file.read().decode()
         warc, header, response = data.strip().split("\r\n\r\n", 2)
-        return {"language": sample["annotated_language"], "html": response}
+        return {"html": response, **sample}
     except:
-        print(">> url sample:")
         with open("error.log", "at") as err_log:
             err_log.write(json.dumps(sample) + "\n")
-        # pprint.pprint(sample)
         return None
 
 
