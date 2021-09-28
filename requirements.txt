@@ -1,0 +1,4 @@
+requests
+orjson
+beautifulsoup4
+readability-lxml
