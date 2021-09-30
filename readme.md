@@ -1,8 +1,13 @@
 # Massive Summ
 
-## Common Crawl URL files
+> This repository is work in progress
 
-In the table below is an overview of language files which each contain a list of samples contained in massive which are also contained in common crawl.
+## Instructions
+In the works...
+
+## Fetch (subset of) Data Through Common Crawl
+
+In the table below is a listing of files containing URLs and metadata required to fetch data from common crawl.
 lang  |  link
 ------|------------------------------------------------------------------------
 amh   |  https://drive.google.com/file/d/1_awz_-B0iWtaPdKih8H8Kz4HGnJSwvRq/view
