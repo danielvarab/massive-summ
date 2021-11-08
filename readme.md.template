@@ -1,11 +1,30 @@
-# Massive Summ
+# MassiveSumm: a very large-scale, very multilingual, news summarisation dataset
+This repository contains links to data and code to fetch and reproduce the data described in our EMNLP 2021 paper titled "[MassiveSumm: a very large-scale, very multilingual, news summarisation dataset](https://aclanthology.org/2021.emnlp-main.797/)". A (massive) multilingual dataset consisting of 92 diverse languages, across 35 writing scripts. With this work we attempt to take the first steps towards providing a diverse data foundation for in summarisation in many languages.
 
-> This repository is work in progress
+> *Disclaimer: The data is noisy and recall-oriented. In fact, we highly recommend reading  our analysis on the efficacy of this type of methods for data collection.*
 
-## Instructions
-In the works...
 
-## Fetch (subset of) Data Through Common Crawl
+## Get the Data
+Redistributing data from web is a tricky matter. We are working on providing efficient access to the entire dataset, as well as expanding it even further. For the time being we only provide links to reproduce subsets of the entire dataset through either common crawl and the wayback machine. The dataset is also available upon request ([djam@itu.dk](mailto:djam@itu.dk)).
+
 
 In the table below is a listing of files containing URLs and metadata required to fetch data from common crawl.
 ${LANGS}
+
+## Cite Us!
+Please cite us if you use our data or methodology 
+```
+@inproceedings{varab-schluter-2021-massivesumm,
+    title = "{M}assive{S}umm: a very large-scale, very multilingual, news summarisation dataset",
+    author = "Varab, Daniel  and
+      Schluter, Natalie",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.797",
+    pages = "10150--10161",
+    abstract = "Current research in automatic summarisation is unapologetically anglo-centered{--}a persistent state-of-affairs, which also predates neural net approaches. High-quality automatic summarisation datasets are notoriously expensive to create, posing a challenge for any language. However, with digitalisation, archiving, and social media advertising of newswire articles, recent work has shown how, with careful methodology application, large-scale datasets can now be simply gathered instead of written. In this paper, we present a large-scale multilingual summarisation dataset containing articles in 92 languages, spread across 28.8 million articles, in more than 35 writing scripts. This is both the largest, most inclusive, existing automatic summarisation dataset, as well as one of the largest, most inclusive, ever published datasets for any NLP task. We present the first investigation on the efficacy of resource building from news platforms in the low-resource language setting. Finally, we provide some first insight on how low-resource language settings impact state-of-the-art automatic summarisation system performance.",
+}
+```
