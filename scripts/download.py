@@ -26,7 +26,7 @@ def download_sample(sample: dict) -> dict:
     offset_end = offset + length - 1
     # We'll get the file via HTTPS so we don't need to worry about S3 credentials
     # Getting the file on S3 is equivalent however - you can request a Range
-    prefix = "https://commoncrawl.s3.amazonaws.com/"
+    prefix = "https://data.commoncrawl.org/"
     # We can then use the Range header to ask for just this set of bytes
     try:
         resp = requests.get(
